@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    max-width: 1920px;
+    align-items: center;
+}
+.banner{
+    position:relative;
+    width: 100%;
+    height: calc(820px - 250px);
+    background: url(../images/img3.jpg);
+    background-size: contain;
+    filter: sepia(10%);
+    animation: anim 25s linear infinite;
+}
+@keyframes anim{
+    0%{
+        background: url(../images/img3.jpg);
+    }
+    25%{
+        background: url(../images/img.jpg);
+    }
+    100%{
+        background: url(../images/img3.jpg);
+    }
+}
+
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    background: black;
+    padding: 0 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+ul{
+    display: flex;
+    margin:0;
+    padding: 0;
+    height: 50px;
+}
+ul:hover li{
+    opacity:0.1;
+}
+ul li{
+    list-style: none;
+    line-height: 50px;
+}
+ul li a{
+    color:aliceblue;
+    text-decoration: none;
+    padding: 11px 20px;
+    font-size: 25px;
+}
+ul li.colors, 
+ul li:hover{
+    background: #6d492e;
+    opacity: 1;
+}
+ul li:hover a{
+    color: #ffffff;
+    text-shadow: 4px 4px 10px #000000;
+    animation: anim2 0.8s;
+}
+@keyframes anim2{
+    0%{transform: rotate(1deg);font-size: 25px;}
+    20%{transform: rotate(2deg);font-size: 26px;}
+    40%{transform: rotate(3deg);font-size: 27px;}
+    60%{transform: rotate(4deg);font-size: 28px;}
+    80%{transform: rotate(5deg);font-size: 29px;}
+    100%{transform: rotate(6deg);font-size: 30px;}
+}
+main{
+    width: 100%;
+    padding: 70px 100px;
+    box-sizing: border-box;
+    background: #d6d5c1;
+
+}
+main h1{
+    font-size: 48px;
+    margin-bottom: 40px;
+}
+main p{
+    font-size: 22px;
+    line-height: 30px;
+}
